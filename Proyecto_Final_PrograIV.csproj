@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{837D164B-8708-41B8-B707-B264726FD76C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_Final_PrograIV</RootNamespace>
+    <AssemblyName>Proyecto_Final_PrograIV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcercadeTEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercadeTEC.Designer.cs">
+      <DependentUpon>AcercadeTEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDispositivosADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarDispositivosADM.Designer.cs">
+      <DependentUpon>AgregarDispositivosADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarSoftADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarSoftADM.Designer.cs">
+      <DependentUpon>AgregarSoftADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsigDispTEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsigDispTEC.Designer.cs">
+      <DependentUpon>AsigDispTEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarSoftTEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarSoftTEC.Designer.cs">
+      <DependentUpon>AsignarSoftTEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clase_Conexion.cs" />
+    <Compile Include="ControlADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlADM.Designer.cs">
+      <DependentUpon>ControlADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MANUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANUsuarios.Designer.cs">
+      <DependentUpon>MANUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTecnico.Designer.cs">
+      <DependentUpon>MenuTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaDeCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaDeCarga.Designer.cs">
+      <DependentUpon>PantallaDeCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportesADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesADM.Designer.cs">
+      <DependentUpon>ReportesADM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcercadeTEC.resx">
+      <DependentUpon>AcercadeTEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarDispositivosADM.resx">
+      <DependentUpon>AgregarDispositivosADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarSoftADM.resx">
+      <DependentUpon>AgregarSoftADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigDispTEC.resx">
+      <DependentUpon>AsigDispTEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarSoftTEC.resx">
+      <DependentUpon>AsignarSoftTEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlADM.resx">
+      <DependentUpon>ControlADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANUsuarios.resx">
+      <DependentUpon>MANUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTecnico.resx">
+      <DependentUpon>MenuTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaDeCarga.resx">
+      <DependentUpon>PantallaDeCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportesADM.resx">
+      <DependentUpon>ReportesADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-borroso_1034-792.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3167099.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poligono-estampado-vector-fondo-degradado_53876-172524.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_13078032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_13078032 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo de Pantalla_Reflejo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extreme-close-up-bent-paper-cut-style.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-render-network-communications-design-structure-with-connecting-lines-dots.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-textura-pintura-veteada-liquida-pintura-fluida-textura-abstracta-mezcla-colores-intensos-papel-tapiz_1258-99337.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AzulABS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_12790651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doorBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barraAzulBajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\realistic-style-microchip-processor-background_52683-58932.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoDesenfoque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-borroso_222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-actualizar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-bookmark-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cerrar-ventana-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-encerrado-afuera-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-documento-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoTEC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4501444_2400718.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOTEC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOtec3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoTECdese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ladrillos-de-puntos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load-35_256.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
