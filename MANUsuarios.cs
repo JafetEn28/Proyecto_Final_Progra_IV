@@ -60,5 +60,10 @@ namespace Proyecto_Final_PrograIV
                 nuevoFormPrincipal.Show();
             }
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

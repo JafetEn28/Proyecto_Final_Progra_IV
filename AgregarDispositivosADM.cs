@@ -41,5 +41,10 @@ namespace Proyecto_Final_PrograIV
                 nuevoFormPrincipal.Show();
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
