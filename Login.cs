@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Linq;
@@ -21,6 +22,93 @@ namespace Proyecto_Final_PrograIV
             // Establecer la posición de inicio del formulario en el centro de la pantalla
             this.StartPosition = FormStartPosition.CenterScreen;
         }
+
+        SqlConnection con = new SqlConnection("Server=JAFET\\SQLEXPRESS;Database=Db_Login;Integrated Security=True;");
+
+        public void Logear(string usuario, string contra)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT Nombre, Tipo_Usuario FROM tblUsuarios WHERE Usuario = @usuario AND Contrasena = @pas", con);
+                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@pas", contra);
+
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+
+                // Crear un formulario de carga
+                PantallaDeCarga pantalladeCarga = new PantallaDeCarga();
+
+                if (dt.Rows.Count == 1)
+                {
+                    this.Hide();
+
+                    if (dt.Rows[0][1].ToString() == "Administrador")
+                    {
+                        // Mostrar formulario de carga
+                        pantalladeCarga.Show();
+
+                        // Configurar un temporizador para cerrar el formulario de carga después de 5 segundos
+                        Timer timer = new Timer();
+                        timer.Interval = 5000; // 5000 milisegundos = 5 segundos
+                        timer.Tick += (s, ev) =>
+                        {
+                            // Detener el temporizador
+                            timer.Stop();
+
+                            // Cerrar el formulario de carga
+                            pantalladeCarga.Close();
+
+                            // Abrir formulario de ControlADM
+                            this.Hide();
+                            ControlADM controlADM = new ControlADM();
+                            controlADM.ShowDialog();
+                            this.Close();
+                        };
+                        timer.Start();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Tecnico")
+                    {
+                        // Mostrar formulario de carga
+                        pantalladeCarga.Show();
+
+                        // Configurar un temporizador para cerrar el formulario de carga después de 5 segundos
+                        Timer timer = new Timer();
+                        timer.Interval = 5000; // 5000 milisegundos = 5 segundos
+                        timer.Tick += (s, ev) =>
+                        {
+                            // Detener el temporizador
+                            timer.Stop();
+
+                            // Cerrar el formulario de carga
+                            pantalladeCarga.Close();
+
+                            // Abrir formulario de MenuTecnico
+                            this.Hide();
+                            MenuTecnico menuTecnico = new MenuTecnico();
+                            menuTecnico.ShowDialog();
+                            this.Close();
+                        };
+                        timer.Start();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrecta");
+                }
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        } 
 
 
 
@@ -101,12 +189,14 @@ namespace Proyecto_Final_PrograIV
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String cedulaADM = txtCedula.Text;
+            Logear(this.txtCedula.Text, this.txtPassword.Text);
+
+            /*String cedulaADM = txtCedula.Text;
             String contraADM = txtPassword.Text;
             string cedulaValidaADM = "1";
             string contraValidaADM = "1";
 
-            //*********************************************//
+      
 
             String cedulaTEC = txtCedula.Text;
             String contraTEC = txtPassword.Text;
@@ -178,7 +268,7 @@ namespace Proyecto_Final_PrograIV
 
 
             //Form1 form1 = new Form1();
-            //form1.Show();
+            //form1.Show();*/
         }
 
         private void txtCedula_TextChanged(object sender, EventArgs e)
@@ -189,6 +279,19 @@ namespace Proyecto_Final_PrograIV
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void checkBoxMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMostrar.Checked == true)
+
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar= true;
+            }
         }
     }
 }
