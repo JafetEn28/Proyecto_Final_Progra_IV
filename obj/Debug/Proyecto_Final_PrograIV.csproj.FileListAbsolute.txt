@@ -31,3 +31,25 @@ C:\Users\Usuario\OneDrive\Escritorio ASUS\UACA PRINCIPAL\Progra IV\Ejemplos\Proy
 C:\Users\Usuario\OneDrive\Escritorio ASUS\UACA PRINCIPAL\Progra IV\Ejemplos\Proyecto_Final_PrograIV\obj\Debug\Proyecto_Final_PrograIV.AsigDispTEC.resources
 C:\Users\Usuario\OneDrive\Escritorio ASUS\UACA PRINCIPAL\Progra IV\Ejemplos\Proyecto_Final_PrograIV\obj\Debug\Proyecto_Final_PrograIV.AcercadeTEC.resources
 C:\Users\Usuario\OneDrive\Escritorio ASUS\UACA PRINCIPAL\Progra IV\Ejemplos\Proyecto_Final_PrograIV\obj\Debug\Proyecto_Final_PrograIV.PantallaDeCarga.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\bin\Debug\Proyecto_Final_PrograIV.exe.config
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\bin\Debug\Proyecto_Final_PrograIV.exe
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\bin\Debug\Proyecto_Final_PrograIV.pdb
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.csproj.AssemblyReference.cache
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.AcercaDe.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.AcercadeTEC.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.AgregarDispositivosADM.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.AgregarSoftADM.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.AsigDispTEC.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.AsignarSoftTEC.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.ControlADM.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.Form1.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.Login.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.MANUsuarios.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.MenuTecnico.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.PantallaDeCarga.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.Properties.Resources.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.ReportesADM.resources
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.csproj.GenerateResource.cache
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.csproj.CoreCompileInputs.cache
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.exe
+C:\Users\jafet\Source\Repos\JafetEn28\Proyecto_Final_Progra_IV\obj\Debug\Proyecto_Final_PrograIV.pdb
